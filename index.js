@@ -1,6 +1,6 @@
 var apiai = require('apiai');
 
-var app = apiai("99ad72a6c7ba4975aeae121d1e0b951f");
+var app = apiai("");
 
 
 var getQuestion = function (question, callback) {
