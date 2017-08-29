@@ -1,0 +1,19 @@
+{
+  "name": "api.ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aayusharora/API.AI-.git"
+  },
+  "author": "“aayusharora” <“aayush113002@gmail.com”>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aayusharora/API.AI-/issues"
+  },
+  "homepage": "https://github.com/aayusharora/API.AI-#readme"
+}
