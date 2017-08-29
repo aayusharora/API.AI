@@ -1,17 +1,27 @@
 var apiai = require('apiai');
 
-var app = apiai("");
+var app = apiai("99ad72a6c7ba4975aeae121d1e0b951f");
 
-var request = app.textRequest('What is GSOC', {
-    sessionId: '23456789ab'
-});
 
-request.on('response', function(response) {
-    console.log(response);
-});
+var getQuestion = function (question, callback) {
 
-request.on('error', function(error) {
-    console.log(error);
-});
+    var request = app.textRequest( question , {
+        sessionId: '23456789ab'
+    });
 
-request.end();
+    request.on('response', function(response) {
+        callback(response);
+    });
+
+    request.on('error', function(error) {
+       callback(error);
+    });
+
+    request.end();
+
+}
+
+
+module.exports = {
+    getQuestion : getQuestion
+}

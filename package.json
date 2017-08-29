@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aayusharora/API.AI-/issues"
   },
-  "homepage": "https://github.com/aayusharora/API.AI-#readme"
+  "homepage": "https://github.com/aayusharora/API.AI-#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
