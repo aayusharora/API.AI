@@ -3,7 +3,7 @@
  */
 
 var express = require('express');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 var app = express();
 var AI = require('./index.js');
 
@@ -33,6 +33,15 @@ app.post('/question',function(req,res) {
         throw err;
     }
 
+});
+
+app.post('/satisfaction', function(req,res) {
+   if( req.body.satisfied === 'yes') {
+       res.send("Thanks for the chat")
+   }
+   else {
+       // giving you a mentor from the pool
+   }
 });
 
 app.listen(port, function(){
